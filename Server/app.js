@@ -22,9 +22,9 @@ app.use(errorHandlerMiddleware);
 
 const start = async () => {
     try {
-        await connectDB(process.env.MONGOS_URL).then(() => {
-            console.log("Connection Successful!!");
-        });
+        console.log('Connecting to database...');
+        await connectDB(process.env.MONGOS_URL);
+        console.log("Connection Successful!!");
         app.use(express.static("../Client/dist"));
         app.get("*" , (req , res) => {
             res.sendFile(path.resolve(__dirname , "Client" , "dist" , "index.html"))

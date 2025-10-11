@@ -69,6 +69,24 @@ const SideBarNavigaion = () => {
           toLink={"/tasks"}
         />
         <NavLinks
+          linkText={"Deals"}
+          icon={
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="size-6"
+            >
+              <path
+                fillRule="evenodd"
+                d="M4.5 2.25a.75.75 0 0 0 0 1.5v16.5a.75.75 0 0 0 0 1.5h15a.75.75 0 0 0 0-1.5V3.75a.75.75 0 0 0 0-1.5h-15ZM9 6a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5H9Zm-1.5 2.25a.75.75 0 0 1 .75.75v6a.75.75 0 0 1-1.5 0v-6a.75.75 0 0 1 .75-.75Zm1.5 0a.75.75 0 0 0 0 1.5h.008a.75.75 0 0 0 0-1.5H9Zm3 0a.75.75 0 0 0 0 1.5h.008a.75.75 0 0 0 0-1.5H12Zm3 0a.75.75 0 0 0 0 1.5h.008a.75.75 0 0 0 0-1.5H15Zm-6.75 3.75a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V12a.75.75 0 0 1 .75-.75Zm1.5 0a.75.75 0 0 0 0 1.5h.008a.75.75 0 0 0 0-1.5H9Zm3 0a.75.75 0 0 0 0 1.5h.008a.75.75 0 0 0 0-1.5H12Zm3 0a.75.75 0 0 0 0 1.5h.008a.75.75 0 0 0 0-1.5H15Z"
+                clipRule="evenodd"
+              />
+            </svg>
+          }
+          toLink={"/deals"}
+        />
+        <NavLinks
           linkText={"Log Out"}
           icon={
             <svg
