@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useTable } from "react-table";
-import CreateCustomer from "./createCustomer";
+import CreateCustomer from "./CreateCustomer";
 
 const ReactTableComponent = ({ data }) => {
   const [currentCustomers, setCurrentCustomers] = useState(data); // State to store customer data

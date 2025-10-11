@@ -3,6 +3,7 @@ import { registerUser, userLogin } from '../controllers/userLoginAndRegister.js'
 import { createCustomer, deleteCustomer, getCustomers, updateCustomerData } from '../controllers/customer.js';
 import { createLead , deleteLead, getAllLeads, getLeadById, updateLead } from '../controllers/leads.js';
 import { createTask, deleteTask, getAllTask, getTask, updateTask } from '../controllers/tasks.js';
+import { createDeal, deleteDeal, getAllDeals, getDealById, updateDeal } from '../controllers/deals.js';
 
 const router = express.Router();
 
@@ -29,5 +30,12 @@ router.get('/tasks' , getAllTask);
 router.get('/tasks/:id' , getTask);
 router.patch('/tasks/:id' , updateTask);
 router.delete('/tasks/:id' , deleteTask);
+
+// Deal CRUD Routes
+router.post('/deals', createDeal);
+router.get('/deals', getAllDeals);
+router.get('/deals/:id', getDealById);
+router.patch('/deals/:id', updateDeal);
+router.delete('/deals/:id', deleteDeal);
 
 export default router;

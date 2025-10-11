@@ -5,6 +5,7 @@ import {
   Tasks,
   Leads,
   Customer,
+  Deals,
 } from "./components";
 import { createBrowserRouter, Route, RouterProvider } from "react-router-dom";
 import Layout from "./Layout";
@@ -26,6 +27,7 @@ const router = createBrowserRouter([
       { path: "/leads", element: <Leads /> ,
         loader : leadsData
       },
+      { path: "/deals", element: <Deals /> },
     ],
   },
   { path: "/login", element: <Login /> },
